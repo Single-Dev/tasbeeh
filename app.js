@@ -7,7 +7,9 @@ input.value =  localStorage.clickcount;
 countPlus.addEventListener('click' , function(){
         input.value =  localStorage.clickcount;
         localStorage.clickcount = Number(localStorage.clickcount)+1;
-        
+        key = "clickcount"
+        value = localStorage.clickcount
+        localStorage.clickcount.getItem( key ).setItem( key, value )
     })
     
 countZero.addEventListener('click' , function(){
