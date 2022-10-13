@@ -6,15 +6,8 @@ input.value =  localStorage.clickcount;
 
 countPlus.addEventListener('click' , function(){
         input.value =  localStorage.clickcount;
-        if (typeof(Storage) !== "undefined") {
-            if (localStorage.clickcount) {
-                localStorage.clickcount = Number(localStorage.clickcount)+1;
-            } else {
-              localStorage.clickcount = 0;
-            }
-          } else {
-           alert("Sorry, your browser does not support web storage...")
-          }
+        localStorage.clickcount = Number(localStorage.clickcount)+1;
+        
     })
     
 countZero.addEventListener('click' , function(){
