@@ -15,6 +15,9 @@ countZero.addEventListener('click' , function(){
 
 setInterval(() => {
     input.value =  localStorage.clickcount;
+    if (localStorage.clickcount === "NaN"){
+        localStorage.setItem("clickcount", 0)
+    }
 },1);
 
 
